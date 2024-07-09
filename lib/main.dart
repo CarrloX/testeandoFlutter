@@ -13,9 +13,16 @@ class MainApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: const Text('resultado',
-          style: TextStyle(fontSize: 50, color: Color.fromARGB(225, 255, 255, 255)),),
-          backgroundColor: Colors.blueGrey,
+          title: const FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text('Resultado',
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 50,
+              color: Colors.white,
+            )),
+          ),
+          backgroundColor: const Color.fromARGB(255, 118, 150, 167),
           toolbarHeight: 200,
         ),
         body: const Center(
