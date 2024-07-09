@@ -14,6 +14,9 @@ class MainApp extends StatelessWidget {
         body: Center(
           child: Text('Hola mundo!'),
         ),
+        bottomNavigationBar: BottomAppBar(
+          child: Text('Bottom bar'),
+        ),
       ),
     );
   }
